@@ -2,6 +2,6 @@
 
 Edward Sanchez 
 
-Shomari Simon
+Shomari Simon X
 
 Suleman Tauheed
