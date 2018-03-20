@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
 
+  resources :product_statuses
+  resources :reservation_statuses
+  resources :customer_statuses
+  resources :customers
+  resources :employees
+  resources :reservations
+  resources :colors
+  resources :materials
+  resources :heels
   resources :products
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
