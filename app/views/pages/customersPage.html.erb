@@ -1,6 +1,10 @@
 <div class="container">
+
+
+
   <h1>Customers
-    <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+    <a href="http://localhost:3000/customers/new"class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">add</i></a>
+    <li class="waves-effect waves-light white-text btn orange"><%= link_to 'New Status', new_customer_status_path %></li>
 
   </h1>
   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for customers..." title="Type in a name">

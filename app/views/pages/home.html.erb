@@ -1,6 +1,14 @@
 <div class="container">
+
+
 <h1>Reservations
-  <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+  <a href="http://localhost:3000/reservations/new" class=" resvervation-add btn-floating btn-large waves-effect waves-light red" >
+    <i class="material-icons">add</i>
+
+  </a>
+  <li class="waves-effect waves-light white-text btn orange"><%= link_to 'New Status', new_reservation_status_path %></li>
+
+
 
 </h1>
   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for reservations..." title="Type in a name">
