@@ -1,0 +1,143 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "styles";
+@import "materialize";
+//@import "materialize/components/color";
+$primary-color: color("blue", "lighten-2") !default;
+$secondary-color: color("yellow", "base") !default;
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+
+.nav {
+
+}
+.post-title{
+  border-color: red;
+  border-style: solid;
+}
+.comment-body{
+  border-color: teal;
+  border-style: solid;
+}
+.comment{
+  border-color: forestgreen;
+  border-style: solid;
+}
+
+ul.hmenu {
+  list-style: none;
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+ul.hmenu li {
+  display: inline;
+}
+.header{
+  margin:10px;
+  padding:10px;
+  display: inline-block;
+
+}
+.header-link{
+  display: inline-block;
+  text-align: right;
+  margin:auto;
+}
+.maincontentbodyrender{
+  padding:10px;
+  margin:20px;
+}
+.list .channelname{
+  margin: 10px;
+  padding:5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: darkred;
+  background-color: palevioletred;
+  color: white;
+}
+.cardContraints{
+  margin: 10px;
+  padding:10px;
+
+}
+
+
+.list .card .card-title {
+  font-weight: bold;
+  color: black;
+}
+.cardContraints .list {
+  margin: 10px;
+  padding:10px;
+}
+
+.list .channelname h2 a{
+  color:#fff;
+  font-weight: bold;
+}
+.list .channelname h2 a:hover{
+  color:#fff;
+  background-color: transparent;
+  font-weight: bold;
+}
+tbody{
+  border-style: groove;
+  border-width: 3px;
+}
+td{
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  margin: 5px;
+}
+a:hover{
+  background: transparent;
+  color: white;
+}
+a:click{
+  color:white;
+}
+a:visited{
+  color:white;
+}
+
+.waves-effect.waves-pink .waves-ripple {
+  /* The alpha value allows the text and background color
+  of the button to still show through. */
+  background-color: rgba(255, 102, 102, 1);
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myCardDIV {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myCardNameLI {
+  list-style-type: none;
+  padding: 10;
+  margin: 10;
+}
+

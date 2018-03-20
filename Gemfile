@@ -54,7 +54,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap-sass', '~> 3.3.6'
 
-gem 'materialize-sass'
+#gem 'materialize-sass'
+gem 'materialize-sass', '~> 1.0.0.alpha4'
+
 gem 'material_icons'
 gem 'sass-rails', '~> 5.0'
 
