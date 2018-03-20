@@ -10,20 +10,39 @@
 
 
   <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper teal">
       <%= link_to "Home", root_url,class: "navbar-brand" %>
-      <ul id="nav-moblie" class="right hide-on-med-and-down">
+      <ul id="nav-moblie" class="right hide-on-med-and-down" >
 
 
 
-        <li> <%= link_to "Products", pages_productsPage_path,class: "navbar-brand" %></li>
-        <li> <%= link_to "Customers", pages_customersPage_path,class: "navbar-brand" %></li>
-        <li> <%= link_to "Materials",page_materialPage_path,class: "navbar-brand" %></li>
-        <li> <%= link_to "Colors", pages_colorPage_path,class: "navbar-brand" %></li>
+
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to current_user.email, user_path(current_user.id) ,class: "navbar-brand" %>
+          </li>
+          <li>
+            <%= link_to "Logout", destroy_user_session_path,class: "navbar-brand"%>
+          </li>
+          <li> <%= link_to "Products", pages_productsPage_path,class: "navbar-brand" %></li>
+          <li> <%= link_to "Customers", pages_customersPage_path,class: "navbar-brand" %></li>
+          <li> <%= link_to "Materials",pages_materialPage_path,class: "navbar-brand" %></li>
+          <li> <%= link_to "Colors", pages_colorPage_path,class: "navbar-brand" %></li>
+        <%else %>
+
+          <li>
+            <%= link_to "Login", new_user_session_path,class: "navbar-brand" %>
+          </li>
+        <%end %>
       </ul>
     </div>
   </nav>
   <body>
+  <div class="container">
+    <% if notice %><div class="alert alert-info"><%= notice %></div><% end %>
+
+    <% if alert %><div class="alert alert-warning"><%= alert %></div><% end %>
+  </div>
     <%= yield %>
   </body>
 </html>
