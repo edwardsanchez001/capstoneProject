@@ -1,6 +1,6 @@
 # README
 
-Edward Sanchez 
+Edward Sanchez X
 
 Shomari Simon X
 

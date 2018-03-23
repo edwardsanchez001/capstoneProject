@@ -38,7 +38,9 @@
 
   <div class="field">
     <%= form.label :dateOfArrival %>
-    <%= form.date_select :dateOfArrival, id: :product_dateOfArrival %>
+    <%= form.text_field :start_date, hide_label: true, class: 'datepicker' %>
+
+    <%# form.date_select :dateOfArrival, id: :product_dateOfArrival %>
   </div>
 
   <div class="field">

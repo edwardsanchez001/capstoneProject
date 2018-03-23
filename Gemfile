@@ -76,5 +76,5 @@ gem 'cancancan', '~> 2.0'
 #gem 'remotipart', github: 'mshibuya/remotipart'
 #gem 'rails_admin', '>= 1.0.0.rc'
 gem 'rails_admin'
-
+gem 'bootstrap-datepicker-rails'
 
