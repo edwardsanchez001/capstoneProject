@@ -10,7 +10,7 @@
 
 
   <nav>
-    <div class="nav-wrapper teal">
+    <div class="nav-wrapper teal  ">
       <%= link_to "Home", root_url,class: "navbar-brand" %>
       <ul id="nav-moblie" class="right hide-on-med-and-down" >
 
@@ -18,16 +18,17 @@
 
 
         <% if user_signed_in? %>
-          <li>
-            <%= link_to current_user.email, user_path(current_user.id) ,class: "navbar-brand" %>
-          </li>
-          <li>
-            <%= link_to "Logout", destroy_user_session_path,class: "navbar-brand"%>
-          </li>
+
           <li> <%= link_to "Products", pages_productsPage_path,class: "navbar-brand" %></li>
           <li> <%= link_to "Customers", pages_customersPage_path,class: "navbar-brand" %></li>
           <li> <%= link_to "Materials",pages_materialPage_path,class: "navbar-brand" %></li>
           <li> <%= link_to "Colors", pages_colorPage_path,class: "navbar-brand" %></li>
+          <li>
+            <%# link_to current_user.email, user_path(current_user.id) ,class: "navbar-brand" %>
+          </li>
+          <li>
+            <%= link_to "Logout", destroy_user_session_path,class: "navbar-brand"%>
+          </li>
         <%else %>
 
           <li>
